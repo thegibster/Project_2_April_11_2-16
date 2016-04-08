@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'users/show'
+
+  get 'users/index'
+
+  get 'users/edit'
+
+  get 'users/create'
+
+  get 'users/delete'
+
+  get 'users/update'
+
   get 'posts/create'
 
   get 'posts/update'
