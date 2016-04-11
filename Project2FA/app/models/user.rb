@@ -19,6 +19,9 @@ class User < ActiveRecord::Base
     leader_ids + [id]
 
   end
+  def timeline_user_ids
+    leader_ids + [id]
+  end
 
   has_secure_password
   validates :email, presence: true, uniqueness: true
